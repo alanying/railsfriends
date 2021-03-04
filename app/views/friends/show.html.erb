@@ -1,0 +1,13 @@
+<div class="card text-white bg-dark mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h1 class="card-title"><%= @friend.last_name %>, <%= @friend.first_name %></h1>
+    <h6 class="card-subtitle mb-2 text-muted"><%= @friend.twitter %></h6>
+    <p class="card-text"><%= @friend.email %> | <%= @friend.phone %></p>
+    <%# <a href="#" class="card-link"><%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-warning" %></a>
+    <%# <a href="#" class="card-link"><%= link_to 'Back', friends_path, class:"btn btn-secondary" %></a>
+  </div>
+</div>
+
+<br/>
+<%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-warning" %>
+<%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
